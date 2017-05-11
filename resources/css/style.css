@@ -1,0 +1,329 @@
+/*font*/
+html {
+  font-size: 18px;
+  background-color: black;
+  color: white;
+}
+
+.heading {
+  font-family: 'Playfair Display', serif;
+}
+
+p,
+h4 {
+  font-family: 'Fauna One', serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h4 {
+  color: #FFD700;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 60%;
+  margin-top: 15%;
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-bottom: 0;
+}
+
+@media only screen for (max-width: 760px) {
+  .container: 80%;
+  margin-top: 15%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+/* begin header section */
+
+.header {
+  width: 100%;
+  height: 7rem;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+.header {
+  background-image: url(../images/BarTest.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.header {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation img {
+  height: 20px;
+  width: auto;
+  padding: 5px 5px 35px 5px;
+  margin: 0 15px 0 15px;
+  z-index: 5;
+  flex-grow: 0;
+  flex-shrink: 4;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.navigation img:hover,
+.navigation a:visited {
+  box-shadow: inset 0px 5px 5px -3px #fff;
+}
+
+h6 {
+  flex-grow:10;
+}
+
+
+/* end header */
+
+/* begin trailer section */
+
+.title {
+  display: none;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.trailer img {
+  max-width: 100%;
+  height: auto;
+  z-index: 5;
+}
+
+.coming {
+  margin: 0 5rem 5rem 5rem;
+  text-align: center;
+  display: block;
+  z-index: 5;
+}
+
+.trailer p {
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+/*changes size of subtitle*/
+@media only screen and (max-width: 960px) {
+  .coming {
+  margin: 3rem;
+  font-size: 2.5rem;
+}
+}
+
+@media only screen and (max-width: 760px) {
+  .coming {
+  margin: 2rem;
+  font-size: 1.5rem;
+}
+}
+
+/*begins topics*/
+
+.scroll-down {
+  background-color: black;
+}
+
+.gif{
+  width: 100px;
+  margin: auto;
+}
+
+.topics {
+  display: flex;
+  flex-direction: column;
+}
+
+.game h1,
+.sail h1,
+.world h1,
+.money h1 {
+  font-size: 3rem;
+  padding-top: 2rem;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-family: 'Abril Fatface', cursive;
+  color: #D4AF37;
+  background-color: #000000;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: .8rem;
+}
+
+.overlay {
+  text-align: center;
+  width: 40%;
+  max-height: 100%;
+  /* Fallback for web browsers that doesn't support RGBa */
+   background: rgb(0, 0, 0);
+   /* RGBa with 0.6 opacity */
+   background: rgba(0, 0, 0, 0.5);
+   /* For IE 5.5 - 7*/
+   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+   /* For IE 8*/
+   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+.game {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-image: url(../images/HMSVictoryHavanaCropped.png);
+  background-position: center;
+  background-size: cover;
+  justify-content: flex-start;
+  align-content: center;
+  height: 20rem;
+}
+
+.sail {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-image: url(../images/CaptainsQuartersCropped.png);
+  background-position: center;
+  background-size: cover;
+  justify-content: flex-end;
+  align-content: center;
+  height: 20rem;
+}
+
+.world {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-image: url(../images/TajikistanCropped.png);
+  background-position: center;
+  background-size: cover;
+  justify-content: flex-start;
+  align-content: center;
+  height: 20rem;
+}
+
+.money {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-image: url(../images/HongKongCropped.png);
+  background-position: center;
+  background-size: cover;
+  justify-content: flex-end;
+  align-content: center;
+  height: 20rem;
+}
+
+.game img,
+.sail img,
+.world img,
+.money img {
+  align-self: center;
+  margin: 0 auto;
+}
+
+.game p,
+.sail p,
+.world p,
+.money p {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: #ffffff;
+  padding: 1% 1% 5% 1%;
+  align-self: center;
+  line-height: 1.5;
+}
+
+.button {
+    letter-spacing: 0;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.button:hover,
+.button:active {
+  letter-spacing: 5px;
+}
+
+.button:after,
+.button:before {
+  backface-visibility: hidden;
+  border: 1px solid #fff;
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 30%;
+  transition: all 600s ease-in-out;
+}
+
+.button:hover:after,
+.button:hover:before {
+  backface-visibility: hidden;
+  border-color: #fff;
+  width: 70%;
+  transition: width 1s ease-in-out;
+}
+
+.button:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
+
+.learn {
+  background-color: #000000;
+  border: 2px solid #FFFFFF;
+  color: white;
+  text-transform: uppercase;
+  padding: .2rem .4rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  border-radius: .8rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.learn:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.learn:hover {
+padding-right: 25px;
+}
+
+.learn:hover:after {
+opacity: 1;
+right: 0;
+}
