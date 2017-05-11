@@ -1,3 +1,63 @@
+body {
+  background-color: #090a0c;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+}
+
+/* begin header section */
+
+.header {
+  width: 100%;
+  height: 7rem;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+.header {
+  background-image: url(../images/BarTest.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.header {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation img {
+  height: 20px;
+  width: auto;
+  padding: 5px 5px 35px 5px;
+  margin: 0 15px 0 15px;
+  z-index: 5;
+  flex-grow: 0;
+  flex-shrink: 4;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.navigation img:hover,
+.navigation a:visited {
+  box-shadow: inset 0px 5px 5px -3px #fff;
+}
+
+h6 {
+  flex-grow:10;
+}
+
+/* end header */
+
+h1 {
+  font-size: 3rem;
+  padding: 110px 0 30px 0;
+}
+
 .gallery {
   display: flex;
   flex-direction: column;
@@ -11,11 +71,14 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin: 50px auto;
 }
 
 .gallery {
   font-size: 3rem;
   z-index: 0;
+  background-color: #000;
+  opacity: .6;
 }
 
 .top {
@@ -25,14 +88,16 @@
   width: 100%;
   height: auto;
   opacity: 0;
-  transition: all 1s ease 200ms;
+  transition: all .3s ease 150ms;
 }
 
-.ship1:active .top{
+.ship1:active .top,
+.ship2:active .top {
   width: 100%;
   height: auto;
   margin: auto;
   top: 0;
+  left: 0;
   opacity: 1;
 }
 
@@ -40,9 +105,4 @@ h2 {
   font-size: 2rem;
   padding: 20px;
   text-align: center;
-}
-
-body {
-  background-color: #FFFFFF;
-  color: #000000;
 }
