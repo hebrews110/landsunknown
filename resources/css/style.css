@@ -3,15 +3,11 @@ html {
   font-size: 18px;
   background-color: black;
   color: white;
+  font-family: 'Fauna One', serif;
 }
 
 .heading {
   font-family: 'Playfair Display', serif;
-}
-
-p,
-h4 {
-  font-family: 'Fauna One', serif;
 }
 
 a {
@@ -25,11 +21,11 @@ h4 {
 }
 
 .container {
-  width: 60%;
+  width: 50%;
   margin-top: 15%;
-  margin-right: 20%;
-  margin-left: 20%;
-  margin-bottom: 0;
+  margin-right: 25%;
+  margin-left: 25%;
+  margin-bottom: 2%;
 }
 
 @media only screen for (max-width: 760px) {
@@ -40,6 +36,18 @@ h4 {
 }
 
 /* begin header section */
+
+/* This is the logo link clickable area */
+#logo-zone {
+position: absolute;
+margin-top: 3.5rem;
+margin-right: 45%;
+margin-left: 49%;
+height: 50px;
+width: 50px;
+background-color: transparent;
+z-index: 11;
+}
 
 .header {
   width: 100%;
@@ -65,8 +73,8 @@ h4 {
 .navigation img {
   height: 20px;
   width: auto;
-  padding: 5px 5px 35px 5px;
-  margin: 0 15px 0 15px;
+  padding: 5px;
+  margin: 0 15px 35px 15px;
   z-index: 5;
   flex-grow: 0;
   flex-shrink: 4;
@@ -103,8 +111,8 @@ video {
   z-index: -1;
 }
 
-.trailer img {
-  max-width: 100%;
+.container img {
+  width: 100%;
   height: auto;
   z-index: 5;
 }
@@ -140,11 +148,18 @@ video {
 
 .scroll-down {
   background-color: black;
+  height: 74px;
 }
 
-.gif{
-  width: 100px;
+.scroll {
+  width: 5%;
   margin: auto;
+}
+
+.scroll img{
+  height: 54px;
+  margin: auto;
+  padding: 10px;
 }
 
 .topics {
@@ -297,12 +312,12 @@ video {
   border: 2px solid #FFFFFF;
   color: white;
   text-transform: uppercase;
-  padding: .2rem .4rem;
+  padding: .3rem .5rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 1.2rem;
-  border-radius: .8rem;
+  border-radius: 0rem;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -312,6 +327,8 @@ video {
 
 .learn:after {
 content: '\00bb';
+padding-top: 5px;
+padding-right: 5px;
 position: absolute;
 opacity: 0;
 top: 0;
@@ -326,4 +343,48 @@ padding-right: 25px;
 .learn:hover:after {
 opacity: 1;
 right: 0;
+}
+
+/* Start System Requirements*/
+
+.require {
+  text-align: center;
+  width: 100%;
+}
+
+.require h1 {
+  font-size: 3rem;
+  padding: 20px 0;
+}
+
+p {
+   line-height: 1.5;
+   padding: 0;
+   margin: 0;
+ }
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #a6a6a6;
+  margin-top: 2rem;
+}
+
+footer span {
+  flex-grow: 10;
+}
+
+footer i,
+footer p {
+  padding: 10px;
+}
+
+footer i {
+  margin: 0 20px;
+}
+
+footer a:hover {
+background-color: red;
+opacity: .8;
 }

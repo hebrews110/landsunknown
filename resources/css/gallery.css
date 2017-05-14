@@ -5,6 +5,16 @@ body {
 }
 
 /* begin header section */
+#logo-zone {
+position: absolute;
+margin-top: 3.5rem;
+margin-right: 45%;
+margin-left: 49%;
+height: 50px;
+width: 50px;
+background-color: transparent;
+z-index: 11;
+}
 
 .header {
   width: 100%;
